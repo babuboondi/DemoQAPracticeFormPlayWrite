@@ -1,0 +1,52 @@
+{
+  "name": "playwright-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "play:test": "npx playwright test",
+    "play:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report",
+    "test-s": "npx playwright test -g @sorting",
+    "test-l": "npx playwright test -g @login",
+    "test-c": "npx playwright test -g @cart"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/faker": "^6.6.9",
+    "@types/jest": "^29.2.4",
+    "@types/node": "^20.14.5",
+    "faker": "^5.5.3",
+    "install": "^0.13.0",
+    "jest": "29.3.1",
+    "ts-jest": "29.0.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "testTimeout": 120000
+  },
+  "dependencies": {
+    "jest-cli": "^29.3.1"
+  }
+}
