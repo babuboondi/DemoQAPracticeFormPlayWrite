@@ -1,0 +1,18 @@
+{
+   
+    "LoginPage": {
+        "fname": "[id='firstName']",
+        "lname": "[id='lastName']",
+        "email": "[id='userEmail']",
+        "gender": "label[for='gender-radio-2']",
+        "mobile": "[id='userNumber']",
+        "dob": "[id='dateOfBirthInput']",
+        "hobies" :"label[for='hobbies-checkbox-2']",
+        "address": "[id='currentAddress']",
+        "state": "[id='state']",
+        "city": "[id='city']",
+        "upload": "[id='uploadPicture']",
+        "subject": "[id='subjectsInput']",
+        "submit": "[id='submit']"
+    }
+}
