@@ -60,7 +60,8 @@ test.describe("Practice Form DEMOQA Feature @login", async () => {
         await loginPage.uplaodpic();
         await loginPage.screenshot();
         await loginPage.clicksubmit();
-        await loginPage.AssertionValue();
+        //Thanks for submitting the form should Not be visible
+        await loginPage.AssertionInvalidValue();
     });
     test("Negative: User tries to Blank Value", async ({ page }) => {
 
@@ -78,7 +79,8 @@ test.describe("Practice Form DEMOQA Feature @login", async () => {
         await loginPage.uplaodpic();
         await loginPage.screenshot();
         await loginPage.clicksubmit();
-        await loginPage.AssertionValue();
+        //Thanks for submitting the form should Not be visible
+        await loginPage.AssertionInvalidValue();
     });
     test("Negative: User tries to invalid date in DOB", async ({ page }) => {
 
@@ -96,7 +98,8 @@ test.describe("Practice Form DEMOQA Feature @login", async () => {
         await loginPage.uplaodpic();
         await loginPage.screenshot();
         await loginPage.clicksubmit();
-        await loginPage.AssertionValue();
+        //Thanks for submitting the form should Not be visible
+        await loginPage.AssertionInvalidValue();
     });
     test("Negative: User tries to invalid phone number", async ({ page }) => {
 
@@ -114,7 +117,8 @@ test.describe("Practice Form DEMOQA Feature @login", async () => {
         await loginPage.uplaodpic();
         await loginPage.screenshot();
         await loginPage.clicksubmit();
-        await loginPage.AssertionValue();
+        //Thanks for submitting the form should Not be visible
+        await loginPage.AssertionInvalidValue();
     });
     test("Negative: User tries to invalid value with special char", async ({ page }) => {
 
@@ -132,7 +136,9 @@ test.describe("Practice Form DEMOQA Feature @login", async () => {
         await loginPage.uplaodpic();
         await loginPage.screenshot();
         await loginPage.clicksubmit();
-        await loginPage.AssertionValue();
+        //Thanks for submitting the form should Not be visible
+        await loginPage.AssertionInvalidValue();
     });
+
    
 })
