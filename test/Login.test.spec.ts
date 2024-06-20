@@ -2,9 +2,9 @@ import { test, expect } from "@playwright/test";
 
 import LoginPage from "../page/Login.page";
 import * as users from "../data/credentials.json";
-//TestCases for new Form application:-Its not possibleto apply all the test cases on practiceAutomation site
+//TestCases for new Form application:-Its not possibleto apply all the test cases on practice-Automation site
 //having no validations in place
-
+// planned scenarios :
 //TC01_Verify that all mandatory fields are marked as such and cannot be left blank
 //TC02_ Validate that the registration form accepts valid and unique email addresses
 //TC03_Test if the registration form displays the right error messages for invalid or wrong inputs
@@ -28,7 +28,7 @@ test.describe("Practice Form DEMOQA Feature @login", async () => {
         await page.goto(`${baseURL}`);
     })
 
-    test("Positive: Standard user tries to Enter valid Details", async ({ page }) => {
+    test("Positive: Standard user tries to Enter valid Details and submit form", async ({ page }) => {
 
         await loginPage.Enterfname(users.standard.fname);
         await loginPage.Enterlname(users.standard.lname);
