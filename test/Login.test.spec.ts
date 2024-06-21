@@ -42,6 +42,7 @@ test.describe("Practice Form DEMOQA Feature @login", async () => {
         await loginPage.uplaodpic();
         await loginPage.screenshot();
         await loginPage.clicksubmit();
+        //Thanks for submitting the form should be visible
         await loginPage.AssertionValue();
     });
     test("Negative:  User tries to invalid emailid", async ({ page }) => {
