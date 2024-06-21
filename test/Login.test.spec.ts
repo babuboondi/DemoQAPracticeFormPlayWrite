@@ -85,7 +85,7 @@ test.describe("Practice Form DEMOQA Feature @login", async () => {
         //Thanks for submitting the form should Not be visible
         await loginPage.AssertionInvalidValue();
     });
-    test("Negative: User tries to invalid date in DOB", async ({ page }) => {
+    test("Negative: User tries to enter invalid date in DOB", async ({ page }) => {
 
         await loginPage.Enterfname(users.blankvalue.fname);
         await loginPage.Enterlname(users.blankvalue.lname);
@@ -104,7 +104,7 @@ test.describe("Practice Form DEMOQA Feature @login", async () => {
         //Thanks for submitting the form should Not be visible
         await loginPage.AssertionInvalidValue();
     });
-    test("Negative: User tries to invalid phone number", async ({ page }) => {
+    test("Negative: User tries to enter invalid phone number", async ({ page }) => {
 
         await loginPage.Enterfname(users.blankvalue.fname);
         await loginPage.Enterlname(users.blankvalue.lname);
@@ -123,7 +123,7 @@ test.describe("Practice Form DEMOQA Feature @login", async () => {
         //Thanks for submitting the form should Not be visible
         await loginPage.AssertionInvalidValue();
     });
-    test("Negative: User tries to invalid value with special char", async ({ page }) => {
+    test("Negative: User tries to enter invalid value with special char", async ({ page }) => {
 
         await loginPage.Enterfname(users.invalidvalues.fname);
         await loginPage.Enterlname(users.invalidvalues.lname);
