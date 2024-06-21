@@ -1,15 +1,11 @@
 pipeline {
-    agent any
-    stages {
-        stage('My tests') {
-            agent {
-                docker {
-                    image 'mcr.microsoft.com/playwright:v1.17.1'
-                }
-            }
-            steps {
-                sh 'npx playwright test'
-            }
-        }
-    }
+   agent { docker { image 'mcr.microsoft.com/playwright:v1.44.1-jammy' } }
+   stages {
+      stage('e2e-tests') {
+         steps {
+            sh 'npm ci'
+            sh 'npx playwright test'
+         }
+      }
+   }
 }
