@@ -102,7 +102,7 @@ export default class LoginPage {
     async AssertionInvalidValue()
     {
          
-        await expect.soft(this.page.getByText('Thanks for submitting the form'), 'Thanks for submitting the form should be visible').toHaveCount(0);  
+        await expect.soft(this.page.getByText('Thanks for submitting the form'), 'Thanks for submitting the form should not be visible').toHaveCount(0);  
     }
 
 }
