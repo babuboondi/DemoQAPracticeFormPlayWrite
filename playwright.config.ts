@@ -5,7 +5,7 @@ const config: PlaywrightTestConfig = {
     //testMatch: ["test/"],
     use: {
         baseURL: "https://demoqa.com/automation-practice-form",
-        headless: false,
+        headless: true,
         screenshot: "off",
         video: "off",
         launchOptions: {
